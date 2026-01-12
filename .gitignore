@@ -35,3 +35,8 @@ notebooks/internal
 .ruff_cache/
 
 __pycache__
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage
