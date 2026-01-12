@@ -27,7 +27,7 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
-dev = ['ruff', 'pre-commit', 'black']
+dev = ['ruff', 'pre-commit', 'black', 'pytest', 'pytest-cov']
 hyperopt = ['gpy==1.13.2', 'ray[tune]==2.40.0', 'hebo==0.3.6']
 
 [tool.setuptools]
@@ -43,3 +43,10 @@ dependencies = { file = ["requirements.txt"] }
 
 [tool.ruff]
 line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
