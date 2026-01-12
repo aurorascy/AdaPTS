@@ -70,6 +70,22 @@ pip install -e .[dev]
 pre-commit install
 ```
 
+## 🧪 Testing
+
+The project includes a comprehensive pytest test suite with 46 tests covering core functionality.
+
+🔹 to run the tests
+```
+pytest tests/ -v
+```
+
+🔹 to run tests with coverage
+```
+pytest tests/ --cov=adapts --cov-report=html
+```
+
+See `tests/README.md` for more details about the test suite.
+
 ## 🏃 Getting started
 
 ### 🏁 The getting started notebook: `notebooks/getting_started.ipynb`
