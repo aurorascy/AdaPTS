@@ -15,6 +15,7 @@ A workshop version of this paper has been presented at [**SCOPE @ ICLR 2025**](h
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/papers/2502.10235)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/license/MIT)
 [![Python: 3.10](https://img.shields.io/badge/Python-3.10-blue)]()
+[![CI](https://github.com/abenechehab/AdaPTS/actions/workflows/ci.yml/badge.svg)](https://github.com/abenechehab/AdaPTS/actions/workflows/ci.yml)
 
 </div>
 
