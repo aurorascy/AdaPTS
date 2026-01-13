@@ -48,14 +48,14 @@ jobs:
         pip install -e .[hyperopt] || echo "Expected: Some hyperopt dependencies may not install on Python 3.12"
       continue-on-error: true
 
-    - name: Verify all dependencies are installed
+    - name: Verify dependencies are installed
       run: |
         pip list
-        echo "Successfully installed all dependencies including optional ones"
+        echo "Dependency installation completed (some optional dependencies may not install on all Python versions)"
 
     - name: Run linting with ruff
       run: |
-        ruff check src/ tests/ --exit-zero
+        ruff check src/ tests/
 
     - name: Run tests with pytest
       run: |

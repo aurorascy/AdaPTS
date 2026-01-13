@@ -44,7 +44,7 @@ pip install -e .[dev]
 pip install -e .[hyperopt]  # May fail on Python 3.12
 
 # Run linting
-ruff check src/ tests/ --exit-zero
+ruff check src/ tests/
 
 # Run tests
 pytest tests/ -v
