@@ -1,7 +1,6 @@
 """Tests for ADAPTS main class."""
-import pytest
 import numpy as np
-from unittest.mock import Mock, MagicMock
+from unittest.mock import Mock
 
 from adapts.adapts import ADAPTS
 from adapts.adapters import IdentityTransformer, MultichannelProjector
