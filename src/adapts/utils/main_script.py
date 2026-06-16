@@ -27,9 +27,9 @@ def prepare_data(dataset_name: str, context_length: int, forecasting_horizon: in
         )
         return X_train, y_train, None, None, X_test, y_test, n_features
     else:
+        repo_root = Path(__file__).resolve().parents[3]
         datareader = data_readers.DataReader(
-            # TODO: handle this as parameter to avoid absolute path
-            data_path="/mnt/data_2/abenechehab/AdaPTS/external_data/",
+            data_path=str(repo_root / "external_data") + "/",
             transform_ts_size=context_length,
             univariate=False,
         )

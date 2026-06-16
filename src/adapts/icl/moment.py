@@ -27,7 +27,7 @@ def load_moment_model(model_name: str, forecast_horizon: int) -> MOMENTPipeline:
             "freeze_embedder": True,
             "freeze_head": False,
         },
-        local_files_only=True,
+        local_files_only=False,
     )
     model.init()
     return model
